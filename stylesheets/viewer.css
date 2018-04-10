@@ -1,0 +1,60 @@
+#viewer-container {
+	font-size: 20px;
+}
+
+#viewer-node sent[data-parser-error="true"] {
+	background-color: rgba(20, 10, 10, 0.1);
+}
+
+#viewer-node sent[data-lexing-error="true"] {
+	background-color: rgba(220, 10, 120, 0.5);
+}
+
+#viewer-container word.spelling-error {
+	color: grey;
+	text-decoration: lightgrey dotted underline;
+}
+
+#viewer-node tag:hover {
+	background-color: rgb(150, 100, 255);
+}
+
+#viewer-node selbri:hover {
+	background-color: rgb(255, 150, 100);
+}
+
+#viewer-node term:hover {
+	background-color: rgb(100, 150, 255);
+}
+
+#viewer-node free:hover {
+	background-color: fuchsia;
+}
+
+#viewer-node bu_clause:hover {
+	background-color: fuchsia;
+}
+
+#viewer-node si_clause:hover {
+	background-color: yellow;
+	color: black;
+}
+
+#viewer-node tag:hover > word:not(.spelling-error),
+#viewer-node selbri:hover > word:not(.spelling-error),
+#viewer-node sumti:hover > word:not(.spelling-error) {
+	text-decoration-color: rgb(255, 255, 230);
+	color: rgb(255, 255, 230);
+	cursor: pointer;
+}
+
+link-head:hover,
+word:not(.spelling-error):hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#viewer-node *:not(.erased) .emphasized:not(.erased) {
+	font-weight: bold;
+	font-style: italic;
+}

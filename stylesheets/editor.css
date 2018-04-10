@@ -1,0 +1,77 @@
+#editor-node {
+	font-family: Monospace;
+	font-size: 2em;
+}
+
+#editor-node:read-write:focus {
+	outline: none;
+}
+
+#editor-node span {
+	white-space: pre-wrap;
+}
+
+#editor-node span.state-erased {
+	text-decoration: line-through;
+	text-decoration-color: gold;
+	opacity: 0.6;
+}
+
+#editor-node span.state-morph-quote {
+	background-color: rgba(0, 0, 0, 0.2);
+	font-style: italic;
+}
+
+#editor-node span.state-parser-name {
+	outline: 2px solid purple;
+}
+
+#editor-node span.state-parser-name.state-recognized-name {
+	background-color: purple;
+	color: white;
+}
+
+#editor-node span.state-dictionary-name {
+	outline: 2px solid blue;
+}
+
+#editor-node span.state-dictionary-name.state-recognized-name {
+	background-color: blue;
+	color: white;
+}
+
+#editor-node span.state-cmene {
+	color: darkorange;
+	font-style: italic;
+}
+
+#editor-node span.state-delimiter {
+	color: white;
+	background-color: grey;
+}
+
+#editor-node span.state-zei-compound {
+	color: lime;
+}
+
+#editor-node span.state-letteral {
+	color: magenta;
+}
+
+#editor-node span.state-preformatted-quote {
+	background-color: rgba(0, 0, 255, 0.3);
+}
+
+#editor-node span[data-spelling-error="true"] {
+    text-decoration: red dashed underline;
+}
+
+#editor-node span[data-parser-error="true"] {
+    color: red;
+    background-color: rgba(20, 10, 10, 0.1);
+}
+
+#editor-node span[data-error-point="true"] {
+    background-color: orange;
+    font-style: italic;
+}

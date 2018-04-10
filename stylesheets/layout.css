@@ -1,0 +1,71 @@
+body {
+	height: 100%;
+	margin: 0;
+}
+
+main {
+	display: flex;
+	flex-flow: column;
+	height: 100vh;
+}
+
+#editable-container {
+	position: relative;
+	width: 100%;
+	flex: 1;
+}
+
+#editable-container > div {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 50%;
+	overflow-y: scroll;
+}
+
+#editable-container > div:nth-child(2) {
+	left: 50%;
+}
+
+#editable-container > div > div:first-child {
+	box-sizing: border-box;
+	min-height: 100%;
+	padding: 20px;
+}
+
+#spellcheck-node {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	outline: 2px solid blue;
+	background-color: white;
+	max-height: 200px;
+	overflow-y: scroll;
+	font-size: 1.5em;
+}
+
+#spellcheck-node ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#spellcheck-node ul li {
+	padding: 3px;
+}
+
+#spellcheck-node ul li:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+
+#spellcheck-node.active {
+	display: block;
+}
+
+#definition-root {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+}
