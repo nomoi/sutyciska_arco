@@ -1,12 +1,7 @@
-la sutyciska
-============
-
-lojbo ve ciska bo proga i ti jarco po'o versiio i loza'i jorne la'o gy localhost gy cu sarcu fi tau la guglkrom je la kromiiym
-
 SutyCiska
 =========
 
-A Lojban text editor.
+A text editor for the [Lojban](https://en.wikipedia.org/wiki/Lojban) language.
 
 * [Live Demo](https://nomoi.github.io/sutyciska_arco/)
 * [Video Demonstration](https://vimeo.com/263987528)
