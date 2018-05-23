@@ -16,4 +16,4 @@ Features
 
 Running locally
 ---------------
-Due to web worker restrictions, serving from localhost is necessary in chrome and chromium. Otherwise, just open the index file.
+Open `index.html` in your browser. Serving from localhost is necessary in chrome and chromium.
